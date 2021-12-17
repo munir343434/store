@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>All Products- Smanseller</title>
+
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="index.js"></script>
+</head>
+<body>
+ <div class="navbar">
+    <div class="logo">
+        
+        </div>
+        <nav>
+            <ul id="menu-item">
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="product.html">Product</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                  
+                      </ul>
+                      </nav>
+                    <a href="cart.html" ><img src="cart.png" width="30px" height="30px" ></a>
+                    <img src="menu.png "class="menu" onclick="toggle()">
+</div>
+   <!-- cart item detail -->
+ <div class="small-container cart-pages">
+     <table>
+         <tr>
+             <th>Product</th>
+               <th>Quantity</th>
+                 <th>Subtotal</th>
+         </tr>
+         <tr>
+             <td>
+                 <div class="cart-info">
+                     <img src="buy-1.jpg" alt="">
+                <div>
+                    <p>Red Printed Tshirt</p>
+                    <small>Price:$10.00</small>
+                    <br>
+                    <a id="first-image" href="">Remove</a>
+
+                </div>
+                 </div>
+             </td>
+               <td><input onclick="itemincreased('item-1','price1')" id="item-1" type="number" value="1"></td>
+                 <td id="price1">10$</td>
+         </tr>
+          <tr>
+             <td>
+                 <div class="cart-info">
+                     <img src="buy-2.jpg" alt="">
+                <div>
+                    <p>Sport Shoes</p>
+                    <small>Price:$15.00</small>
+                    <br>
+                    <a class="first-image" href="">Remove</a>
+
+                </div>
+                 </div>
+             </td>
+               <td><input onclick="itemincreased('item-2','price2')" id="item-2" type="number" value="1"></td>
+                 <td id="price2">15$</td>
+         </tr>
+          <tr>
+             <td>
+                 <div class="cart-info">
+                     <img src="buy-3.jpg" alt="">
+                <div>
+                    <p>Black Trouser</p>
+                    <small>Price:$20.00</small>
+                    <br>
+                    <a id="first-image" href="">Remove</a>
+
+                </div>
+                 </div>
+             </td>
+               <td><input onclick="itemincreased('item-3','price3')" id="item-3" type="number" value="1"></td>
+                 <td id="price3">20$</td>
+         </tr>
+     </table>
+<div class="total-price">
+   <table>
+       <tr>
+           <td>Subtotal</td>
+           <td>$200</td>
+       </tr>
+       <tr>
+           <td>Tax</td>
+           <td>$20</td>
+       </tr>
+       <tr>
+           <td>Subtotal</td>
+           <td>$220</td>
+       </tr>
+   </table>
+</div>
+ </div>
+ 
+ 
+ <!-- ----------Footer-------- -->
+        <!-- footer -->
+<div class="footer">
+    <div class="container">
+<div class="row">
+                        
+
+<div class="footer-col-3">
+    <h3 style="text-decoration: underline; padding-bottom: 15px; padding-top: 15px;">Useful links</h3>
+    <ul>
+        <li>Coupon</li>
+        <li>Blog post</li>
+        <li>Return Policy</li>
+        <li>Join Affiliate</li>
+    </ul>
+</div>
+<div class="footer-col-4">
+    <h3 style="text-decoration: underline; padding-bottom: 15px; padding-top: 15px;">Follow us</h3>
+    <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>You Tube</li>
+    </ul>
+</div>
+</div>
+<hr>
+<p class="copy">Copy right 2021</p>
+</div>
+</div>
+
+
+<!-- js for toggle menu -->
+<script>
+    var menu=document.getElementById("menu-item");
+    menu.style.maxHeight="0px";
+    function toggle(){
+        if(menu.style.maxHeight=="0px"){
+            menu.style.maxHeight="200px";
+        }else{
+            menu.style.maxHeight="0px";
+        }
+    }
+   
+
+</script>
+    
+</body>
+</html>
